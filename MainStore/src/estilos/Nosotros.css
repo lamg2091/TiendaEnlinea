@@ -1,0 +1,168 @@
+/* Estilos del componente Nosotros (mismo estilo que tu página de productos) */
+
+.container-nosotros {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+    font-family: sans-serif;
+    color: black;
+}
+
+/* ---------- Encabezado ---------- */
+.header-nosotros {
+    padding: 50px 0 40px;
+}
+.header-nosotros h1 {
+    font-size: clamp(2.2rem, 7vw, 4.5rem);
+    line-height: 1.05;
+    font-weight: 800;
+    max-width: 16ch;
+    letter-spacing: -0.02em;
+}
+.header-nosotros p {
+    max-width: 36rem;
+    margin-top: 24px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #3a3838e0;
+}
+.container-nosotros hr {
+    border: none;
+    border-top: 2px solid black;
+    margin-bottom: 50px;
+}
+
+/* ---------- Contenido ---------- */
+.descripcion-nosotros {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Cómo empezamos */
+.descripcion-comienzo {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+}
+.descripcion-comienzo h2,
+.quienes-somos h2 {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 800;
+    line-height: 1.1;
+}
+.descripcion-comienzo-texto {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    max-width: 38rem;
+}
+
+/* Valores */
+.preguntas-frecuentes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.container-preguntas {
+    border: 1px solid #c0bcbce0;
+    border-radius: 20px;
+    padding: 28px;
+    transition: transform 0.15s ease-out;
+}
+.container-preguntas:hover {
+    transform: translateY(-4px);
+}
+.container-preguntas h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.container-preguntas p {
+    color: #3a3838e0;
+    line-height: 1.6;
+}
+.container-preguntas:nth-child(2) {
+    background-color: black;
+    border-color: black;
+}
+.container-preguntas:nth-child(2) h2 {
+    color: white;
+}
+.container-preguntas:nth-child(2) p {
+    color: #d6d3d3;
+}
+
+/* Equipo */
+.quienes-somos h2 {
+    margin-bottom: 30px;
+}
+.group-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+}
+.list-group-item img {
+    width: 100%;
+    max-width: 220px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #eee;
+    display: block;
+    margin-bottom: 14px;
+}
+.list-group-item h3 {
+    font-size: 1.1rem;
+}
+.list-group-item p {
+    color: grey;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+/* Botón (NavLink) */
+.descripcion-nosotros > a {
+    align-self: flex-start;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 999px;
+    transition: background-color 0.2s;
+}
+.descripcion-nosotros > a:hover {
+    background-color: #d63a00;
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 900px) {
+    .descripcion-comienzo {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .preguntas-frecuentes {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------- Móvil ---------- */
+@media (max-width: 480px) {
+    .container-nosotros {
+        padding: 12px 12px 40px;
+    }
+    .header-nosotros {
+        padding: 30px 0 24px;
+    }
+    .descripcion-nosotros {
+        gap: 40px;
+    }
+    .container-preguntas {
+        padding: 20px;
+    }
+    .descripcion-nosotros > a {
+        align-self: stretch;
+        text-align: center;
+    }
+}

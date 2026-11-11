@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.main-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  width: 100%;
+  background-color: #ededed;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+  gap: 10px;
+}
+.contenedor-nav {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  margin: auto;
+}
+.contenedor-nav .img-logo {
+  width: 250px;
+  background-color: black;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+.contenedor-nav .nav-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.items {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.items .link {
+  background-color: #9ca3af;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 5px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all ease-out 0.3s;
+  font-weight: 500;
+}
+.items .link:hover,
+.items .link:focus {
+  background-color: #4b5563;
+}
+.items a {
+  text-decoration: none;
+  color: white;
+}
+.utilidades {
+  display: flex;
+  align-items: center;
+  gap: 40x;
+}
+.drop-login {
+  width: 200px;
+}
+.drop-login select {
+  padding: 8px 10px;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  color: black;
+  outline: none;
+  margin-left: 4em;
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  transition:
+    border-color 0.25s,
+    box-shadow 0.25s;
+    padding: 5px;
+    font-family: sans-serif;
+}
+.select-group select:focus {
+  outline: none;
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.25);
+}
+.drop-login select:hover{
+    background-color: black;
+    color: white;
+}
+.drop-login option {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  font-size: 0.9rem;
+}
+.select-group option:checked {
+  background-color: #e5e7eb;
+  font-weight: bold;
+}
+.container-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+  cursor: pointer;
+  padding: 15px;
+}
+.container-user span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.container-user .img-user {
+  border-radius: 100%;
+  width: 40px !important;
+  object-fit: cover;
+}
+.shopping-cart {
+  width: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.shopping-cart .icon-cart {
+  width: 40px;
+  height: 40px;
+}
+.shopping-cart span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 10px;
+  border-radius: 100%;
+  font-weight: 800;
+}
+.btn-menu {
+  border: none;
+  display: none;
+  align-items: center;
+  margin-left: 100px;
+}
+.btn-menu .icon-menu {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+/* Media queris*/
+
+@media screen and (max-width: 56.125rem) {
+  .main-container {
+    width: 100%;
+  }
+  .contenedor-nav {
+    width: 100%;
+    padding: 20px 30px;
+  }
+
+  .nav-bar .items {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #ededed;
+    padding: 20px 0;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+  }
+
+  .nav-bar .items.active {
+    display: flex;
+  }
+
+  .utilidades .btn-menu {
+    display: flex;
+  }
+}
+
+/* ========== Móvil (≤ 767px) ========== */
+@media screen and (max-width: 47.938rem) {
+  .contenedor-nav .img-logo {
+    width: 180px;
+  }
+
+  .utilidades {
+    gap: 15px;
+  }
+
+  .container-user {
+    width: auto;
+    padding: 5px;
+  }
+
+  .container-user span {
+    display: none;
+  }
+}
+
+/* ========== Móvil pequeño (≤ 480px) ========== */
+@media screen and (max-width: 30rem) {
+  .contenedor-nav {
+    padding: 10px 15px;
+  }
+  .utilidades {
+    margin-left: 20px;
+  }
+
+  .contenedor-nav .img-logo {
+    width: 140px;
+  }
+
+  .shopping-cart {
+    width: 45px;
+  }
+
+  .shopping-cart .icon-cart {
+    width: 32px;
+    height: 32px;
+  }
+}

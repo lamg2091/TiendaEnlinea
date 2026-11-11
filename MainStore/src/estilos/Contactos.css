@@ -1,0 +1,218 @@
+.main-contacto {
+   width: 80%;
+   margin: 0 auto;
+}
+.contenedor-contacto{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 100vh;
+}
+.text-encabezado{
+   width: 100%;
+   max-width: 751px;
+}
+.text-encabezado h1{
+   width: 350px;
+   font-size: 3rem;
+   margin-bottom: 1rem;
+}
+.text-encabezado p{
+   font-size: 0.9rem;
+   color: #3b3b3b;
+}
+.contenedor-formulario{
+   width: 100%;
+   max-width: 50%;
+   display: flex;
+   text-align: start;
+   gap: 2.5rem;
+}
+.group-contacto{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   width: 100%;
+}
+.group-input{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+}
+.group-input label{
+   font-size: 0.9rem;
+   color: #3b3b3b;
+}
+.group-input input{
+   width: 100%;
+   padding: 0.5rem;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   margin-bottom: 1rem;
+   padding: 1rem 1.2rem   
+}
+.group-input textarea{
+   width: 100%;
+   height: 150px;
+   padding: 0.5rem;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   margin-bottom: 1rem;
+   padding: 1rem 1.2rem   
+}
+.btn-contacto{
+   background-color: #000;
+   color: #fff;
+   padding: 1rem 1.5rem;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+}
+.contacto-redes{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   margin-top: 2rem;
+   width: 100%;
+   max-width: 40%;
+}
+.contacto{
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   border: 1px solid #ccc;
+   padding: 2.2rem 1rem;
+   width: 100%;
+   border-radius: 5px;
+}
+
+/* ============================================
+   PANTALLAS MUY GRANDES (monitores 1440px+)
+   ============================================ */
+@media (min-width: 1440px) {
+   .main-contacto {
+      max-width: 1400px;
+   }
+   .text-encabezado h1 {
+      font-size: 3.5rem;
+      width: 420px;
+   }
+   .contenedor-formulario {
+      max-width: 55%;
+   }
+}
+
+/* ============================================
+   LAPTOPS / PANTALLAS GRANDES (hasta 1200px)
+   ============================================ */
+@media (max-width: 1200px) {
+   .main-contacto {
+      width: 90%;
+   }
+   .contenedor-formulario {
+      max-width: 70%;
+   }
+   .contacto-redes {
+      max-width: 45%;
+   }
+}
+
+/* ============================================
+   TABLETS (hasta 992px)
+   ============================================ */
+@media (max-width: 992px) {
+   .main-contacto {
+      width: 92%;
+   }
+   .contenedor-contacto {
+      height: auto;
+      min-height: 100vh;
+      padding: 3rem 0;
+   }
+   .text-encabezado {
+      max-width: 100%;
+   }
+   .text-encabezado h1 {
+      width: 100%;
+      font-size: 2.5rem;
+   }
+   .contenedor-formulario {
+      max-width: 100%;
+      flex-direction: column;
+      gap: 2rem;
+   }
+   .contacto-redes {
+      max-width: 100%;
+      margin-top: 0;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+   .contacto {
+      flex: 1 1 calc(50% - 1rem);
+      padding: 1.5rem 1rem;
+   }
+}
+
+
+@media (max-width: 768px) {
+   .main-contacto {
+      width: 94%;
+   }
+   .text-encabezado h1 {
+      font-size: 2.2rem;
+   }
+   .contacto-redes {
+      flex-direction: column;
+   }
+   .contacto {
+      flex: 1 1 100%;
+   }
+}
+
+
+@media (max-width: 576px) {
+   .main-contacto {
+      width: 100%;
+      padding: 0 1rem;
+   }
+   .contenedor-contacto {
+      padding: 2rem 0;
+   }
+   .text-encabezado h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+   }
+   .text-encabezado p {
+      font-size: 0.85rem;
+   }
+   .contenedor-formulario {
+      gap: 1.5rem;
+   }
+   .group-input input,
+   .group-input textarea {
+      padding: 0.8rem 1rem;
+      font-size: 16px; 
+   }
+   .group-input textarea {
+      height: 120px;
+   }
+   .btn-contacto {
+      padding: 0.9rem 1.2rem;
+   }
+   .contacto {
+      padding: 1.2rem 0.8rem;
+   }
+}
+
+
+@media (max-width: 400px) {
+   .text-encabezado h1 {
+      font-size: 1.6rem;
+   }
+   .group-input label,
+   .text-encabezado p {
+      font-size: 0.8rem;
+   }
+}

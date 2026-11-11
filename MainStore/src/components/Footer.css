@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+}
+body{
+    font-family: sans-serif;
+}
+.main-container-fotter{
+    margin: 0 auto;
+    padding: 20px 15px;
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+    padding-top: 30px;
+}
+.container-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+}
+.marca-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+.form-footer{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.form-footer .input-footer{
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+    border: 1px gray solid;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    color: white;
+}
+.form-footer .input-footer::placeholder{
+    color: grey;
+}
+.btn-footer{
+    padding: 10px 15px;
+    background-color: orangered;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-footer:hover{
+    background-color: rgba(255, 68, 0, 0.753);
+    color: white;
+}
+ 
+.marca-logo img{
+    width: 100%;
+    max-width: 200px;
+    object-fit: cover;
+}
+.section-categoria h4{
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.link-categoria{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.link-categoria a{
+    color: grey;
+    font-size: 0.9rem;
+
+}
+.section-ayuda{
+    width: 10%;
+    padding: 10px;
+}
+.section-ayuda h4{
+     color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.link-ayuda{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.link-ayuda a{
+ color: grey;
+ font-size: 0.9rem;
+}
+.section-redes{
+    width: 10%;
+    padding: 10px;
+}
+.section-redes h4{
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    align-items: center;
+}
+.link-redes{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.link-redes a{
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 100%;
+}
+.icon-redes{
+    color: white;
+    font-size: 20px;
+}
+.section-copyright{
+   margin-top: 30px;
+   margin-bottom: 0;
+}
+.section-copyright p{
+    text-align: center;
+    color: white;
+}
+hr{
+    margin-top: 40px;
+    color: rgba(128, 128, 128, 0.479);
+}
+/* ========== Hasta 1024px (laptops pequeñas / tablets grandes) ========== */
+@media (max-width: 1024px) {
+    .main-container-fotter {
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .container-footer {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .marca-logo {
+        max-width: 320px;
+    }
+
+    .section-ayuda,
+    .section-redes {
+        width: auto;
+        padding: 0;
+    }
+
+    .link-redes {
+        gap: 15px;
+    }
+}
+
+/* ========== Hasta 768px (tablets) ========== */
+@media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        margin-top: 15px;
+    }
+
+    .marca-logo {
+        max-width: 100%;
+    }
+
+    .section-categoria,
+    .section-ayuda,
+    .section-redes {
+        width: 100%;
+    }
+
+    .link-categoria,
+    .link-ayuda {
+        gap: 8px;
+    }
+
+    .link-redes {
+        gap: 12px;
+    }
+
+    .section-copyright {
+        margin-top: 20px;
+    }
+}
+
+/* ========== Hasta 430px (celulares) ========== */
+@media (max-width: 430px) {
+    .main-container-fotter {
+        padding: 25px 15px;
+    }
+
+    .container-footer {
+        gap: 25px;
+    }
+
+    .marca-logo img {
+        max-width: 150px;
+    }
+
+    .form-footer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .btn-footer {
+        width: 100%;
+    }
+
+    .section-categoria h4,
+    .section-ayuda h4,
+    .section-redes h4 {
+        font-size: 0.85rem;
+    }
+
+    .link-categoria a,
+    .link-ayuda a {
+        font-size: 0.85rem;
+    }
+
+    .link-redes a {
+        padding: 8px;
+    }
+
+    .icon-redes {
+        font-size: 18px;
+    }
+
+    .section-copyright p {
+        font-size: 0.8rem;
+    }
+
+    hr {
+        margin-top: 25px;
+    }
+}
