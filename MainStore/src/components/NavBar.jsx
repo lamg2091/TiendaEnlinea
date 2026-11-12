@@ -1,12 +1,11 @@
 
-import { Link, NavLink } from "react-router-dom";
+import { Link,  } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
   faBoxOpen,
   faUsers,
   faEnvelope,
-  faChevronDown,
   faBars,
   faXmark,
 
@@ -14,7 +13,6 @@ import {
 import imagenUser from "../assets/images/luis.jpeg";
 import imagenLogo from "../assets/images/logo.png";
 import "../components/NavBar.css";
-import InicioSesion from "../formularios/Inicio-sesion";
 import {useNavigate} from 'react-router-dom'
 import { useState } from "react";
 
@@ -51,7 +49,7 @@ const NavBar = () => {
                 <select className="opcion-credencial" defaultValue='' onChange={(e) => navigate(e.target.value)}>
                   <option value="" disable>Selecione una opcion</option>
                   <option value="/iniciosesion">Incio de sesion</option>
-                  <option value="/registro">Crea una cuenta</option>
+                  <option value="/registeruser">Crea una cuenta</option>
                   <option value="/admin">Administrador</option>
                 </select>
               </div>

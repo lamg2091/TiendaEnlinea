@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.container-main-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container-register {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.container-register .icon-register {
+  font-size: 80px;
+  margin: 0 auto 20px;
+}
+.container-register fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.container-register legend {
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0 8px;
+  text-transform: uppercase;
+}
+.container-register .group-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.container-register label {
+  font-size: 0.9rem;
+  color: grey;
+  font-weight: bold;
+}
+.container-register input {
+  padding: 15px 18px;
+  border-radius: 5px;
+  border: 2px solid grey;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.group-form .icon-form{
+    position: absolute;
+    top: 50%;
+    pointer-events: none;
+    left: 91%;
+}
+.show-pass{
+   display: flex;
+   gap: 10px;
+   margin-bottom: 10px;
+}
+.btn-register{
+    padding: 15px 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.text-fotter{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.icon-form{
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container-register {
+    max-width: 450px;
+  }
+
+  .container-register .icon-register {
+    font-size: 64px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .container-main-register {
+    padding: 15px;
+    align-items: flex-start; 
+  }
+
+  .container-register {
+    max-width: 100%;
+  }
+
+  .container-register .icon-register {
+    font-size: 56px;
+    margin-bottom: 15px;
+  }
+
+  .container-register fieldset {
+    padding: 12px;
+  }
+
+  .container-register input {
+    padding: 12px 14px;
+  }
+
+  .btn-register {
+    padding: 12px 14px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .container-main-register {
+    padding: 10px;
+  }
+
+  .container-register .icon-register {
+    font-size: 48px;
+  }
+
+  .container-register legend {
+    font-size: 0.8rem;
+  }
+
+  .container-register label,
+  .text-fotter,
+  .show-pass {
+    font-size: 0.8rem;
+  }
+
+  .container-register input {
+    padding: 10px 12px;
+    font-size: 16px; 
+  }
+}
+
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .container-main-register {
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .container-register .icon-register {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+}

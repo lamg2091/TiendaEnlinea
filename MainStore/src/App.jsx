@@ -8,6 +8,7 @@ import Inicio from "./page/Inicio";
 import Producto from './page/Producto'
 import Contacto from './page/Contacto'
 import InicioSesion from "./formularios/Inicio-sesion";
+import RegistroUser from './formularios/RegistroUser'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/nosotros" element={<Nosotros/>}/>
         <Route path="/contacto" element={<Contacto/>}/>
         <Route path="/iniciosesion" element={<InicioSesion/>}/>
+        <Route path="/registeruser" element={<RegistroUser/>}/>
       </Routes>
       <Fotter />
     </>
